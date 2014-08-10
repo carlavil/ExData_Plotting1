@@ -12,8 +12,3 @@ data$Global_active_power <- as.numeric(as.character(data$Global_active_power))
 png("plot1.png", width =480, height=480, units="px")
 hist(data$Global_active_power, col="red", main="Global Active Power", xlab="Global Active Power (kilowatts)")
 dev.off()
-
-
-png("plot2.png", width =480, height=480, units="px")
-plot(data$NewDateTime, data$Global_active_power, type ="l", xlab="", ylab="Global Active Power (kilowatts)")
-dev.off()
